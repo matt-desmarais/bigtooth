@@ -4,9 +4,9 @@ sns.set(rc={'figure.facecolor':'lightgray'})
 import matplotlib.pyplot as plt
 
 pd.set_option('display.width', pd.util.terminal.get_terminal_size()[0])
-pd.set_option('display.max_columns', None)'
+pd.set_option('display.max_columns', None)
 
-sns.stripplot(x='pdate', y='ptime', data
+sns.stripplot(x='pdate', y='ptime', data=None)
 
 #def barplot(count):
     #plot = sns.barplot(x = count.columns[0], y = count.columns[1], data = count)

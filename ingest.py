@@ -8,12 +8,12 @@ import pandas as pd
 
 
 
-DBPATH = '/home/pcgeller/bigtooth/dbs'
+DBPATH = '/root/bigtooth/dbs'
 DATAPATHS = ['dbs','logs']
-PROJECT = '/home/pcgeller/bigtooth'
+PROJECT = '/root/bigtooth'
 def fetchdbs(LOCAL, \
         remote = 'pi@192.168.1.186', \
-        REMOTE = '/home/pi/bigtooth/', \
+        REMOTE = '/root/bigtooth/', \
         DATAPATHS = DATAPATHS):
     for PATH in DATAPATHS:
         call(['scp', '-r', remote + ':' + join(REMOTE,PATH), LOCAL ])
